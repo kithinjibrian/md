@@ -38,7 +38,6 @@ export class Html implements Extension {
             },
 
             [TokenType.CODE_BLOCK]: (token: Token, context: Context) => {
-                console.log(token);
                 const lang = token.language ? ` class="language-${this._escapeHTML(token.language)}"` : '';
                 context.result += `<pre>\n<code${lang}>\n${this._escapeHTML(token.content)}\n</code>\n</pre>`;
             },

@@ -13,12 +13,17 @@ export function md_render(markdown: string, extension: Extension) {
 }
 
 if (require.main === module) {
-    const res = md_render(`
-\`\`\`run:js tools=gmail,openai
-fun main() {
+    const context = md_render(`
+# Hello world in lugha
 
+\`\`\`lugha
+use std::io::{ print };
+
+fun main(): unit {
+    print("{}", "Hello, World!");
 }
+\`\`\`
 `, new Html());
 
-    console.log(res)
+    console.log(context.result)
 }

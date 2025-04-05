@@ -1,0 +1,23 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TokenType = void 0;
+var TokenType;
+(function (TokenType) {
+    TokenType["HEADING"] = "HEADING";
+    TokenType["PARAGRAPH"] = "PARAGRAPH";
+    TokenType["BOLD"] = "BOLD";
+    TokenType["ITALIC"] = "ITALIC";
+    TokenType["CODE_INLINE"] = "CODE_INLINE";
+    TokenType["CODE_BLOCK"] = "CODE_BLOCK";
+    TokenType["BLOCKQUOTE"] = "BLOCKQUOTE";
+    TokenType["UNORDERED_LIST_ITEM"] = "UNORDERED_LIST_ITEM";
+    TokenType["ORDERED_LIST_ITEM"] = "ORDERED_LIST_ITEM";
+    TokenType["HORIZONTAL_RULE"] = "HORIZONTAL_RULE";
+    TokenType["LINK"] = "LINK";
+    TokenType["IMAGE"] = "IMAGE";
+    TokenType["LINE_BREAK"] = "LINE_BREAK";
+    TokenType["TEXT"] = "TEXT";
+    TokenType["LIST_START"] = "LIST_START";
+    TokenType["LIST_END"] = "LIST_END";
+    TokenType["EOF"] = "EOF";
+})(TokenType || (exports.TokenType = TokenType = {}));

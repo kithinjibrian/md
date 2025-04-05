@@ -1,0 +1,20 @@
+export declare enum TokenType {
+    HEADING = "HEADING",
+    PARAGRAPH = "PARAGRAPH",
+    BOLD = "BOLD",
+    ITALIC = "ITALIC",
+    CODE_INLINE = "CODE_INLINE",
+    CODE_BLOCK = "CODE_BLOCK",
+    BLOCKQUOTE = "BLOCKQUOTE",
+    UNORDERED_LIST_ITEM = "UNORDERED_LIST_ITEM",
+    ORDERED_LIST_ITEM = "ORDERED_LIST_ITEM",
+    HORIZONTAL_RULE = "HORIZONTAL_RULE",
+    LINK = "LINK",
+    IMAGE = "IMAGE",
+    LINE_BREAK = "LINE_BREAK",
+    TEXT = "TEXT",
+    LIST_START = "LIST_START",
+    LIST_END = "LIST_END",
+    EOF = "EOF"
+}
+//# sourceMappingURL=token.d.ts.map
